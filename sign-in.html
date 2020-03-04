@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Deseat.me - Sign in</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+    <style type="text/css">
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif
+        }
+        
+        h1 {
+            font-size: 40px;
+            font-weight: 500
+        }
+        
+        h2 {
+            font-size: 26px;
+            font-weight: 500
+        }
+        
+        ol,
+        p,
+        ul {
+            font-size: 14px
+        }
+        
+        a {
+            color: #4682b4;
+            text-decoration: none
+        }
+        
+        a:hover {
+            text-decoration: underline
+        }
+        
+        .split-view {
+            display: flex;
+            flex-wrap: wrap
+        }
+        
+        .split-view>* {
+            flex-grow: 1;
+            box-sizing: border-box
+        }
+        
+        @media (min-width:728px) {
+            .split-view {
+                flex-wrap: nowrap
+            }
+            .split-view>* {
+                width: 50%
+            }
+        }
+        
+        section.with-icon {
+            align-items: center;
+            padding: 80px 32px
+        }
+        
+        section.with-icon>div:nth-child(1) .icon {
+            font-size: 30px
+        }
+        
+        section.with-icon>div:nth-child(2) {
+            text-align: center
+        }
+        
+        section.with-icon>div:nth-child(2) img {
+            max-width: 100%;
+            max-height: 300px;
+            width: auto;
+            height: auto
+        }
+        
+        @media (min-width:728px) {
+            section.with-icon>div:nth-child(1) {
+                position: relative;
+                padding-left: 48px
+            }
+            section.with-icon>div:nth-child(1) .icon {
+                position: absolute;
+                top: 20px;
+                left: -8px
+            }
+        }
+        
+        main {
+            display: flex;
+            flex-direction: column;
+            height: 100vh
+        }
+        
+        .space.top {
+            flex-grow: .4
+        }
+        
+        .space.bottom {
+            flex-grow: .6
+        }
+        
+        h1 {
+            text-align: center;
+            margin: 0 auto 16px;
+            color: #000
+        }
+        
+        p {
+            text-align: center;
+            margin: 16px auto 32px;
+            color: #000
+        }
+        
+        .button {
+            display: block;
+            width: 220px;
+            padding: 12px 0;
+            margin: 20px auto;
+            color: #fff;
+            font-weight: 300;
+            text-align: center;
+            text-decoration: none
+        }
+        
+        .button.google {
+            background-color: #cd483a
+        }
+        
+        .button.outlook {
+            background-color: #0072c6
+        }
+        
+        .first-time-notice {
+            max-width: 340px;
+            margin-top: 48px;
+            font-weight: 100
+        }
+        
+        .first-time-notice strong {
+            font-weight: 500
+        }
+        
+        .about-permissions {
+            max-width: 270px;
+            margin: 0 auto
+        }
+        
+        .about-permissions .title {
+            font-size: 14px;
+            text-align: center;
+            margin: 32px auto 16px
+        }
+        
+        .about-permissions .permission {
+            font-size: 10px;
+            margin: 1em 0;
+            color: #666
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="space top"></div>
+        <div>
+            <h1>Sign in</h1>
+            <p>Choose your account.</p><a href="https://api.deseat.me/v1/login/google" rel="noopener" class="button google">Sign in with Gmail</a> <a href="https://api.deseat.me/v1/login/outlook" rel="noopener" class="button outlook">Sign in with Outlook</a>
+            <div class="about-permissions">
+                <div class="title">About the permissions required</div>
+                <div class="permission"><strong>Email read access</strong>
+                    <br>Deseat.me works by finding emails confirming your signup from different services providers. Your emails will <strong>not</strong> leave your browser and are <strong>not</strong> uploaded to our servers.</div>
+                <div class="permission"><strong>Email sending</strong>
+                    <br>Deseat.me allows you to send a GDPR removal request directly to service providers via email. An email will only be sent after showing you a preview of the entire email, and you clicking "Send".</div>
+            </div>
+        </div>
+        <div class="space bottom"></div>
+    </main>
+    <script>
+        ! function(e, a, t, n, g, c, o) {
+            e.GoogleAnalyticsObject = g, e.ga = e.ga || function() {
+                (e.ga.q = e.ga.q || []).push(arguments)
+            }, e.ga.l = 1 * new Date, c = a.createElement(t), o = a.getElementsByTagName(t)[0], c.async = 1, c.src = "https://www.google-analytics.com/analytics.js", o.parentNode.insertBefore(c, o)
+        }(window, document, "script", 0, "ga"), ga("create", "UA-87950078-1", "auto"), ga("send", "pageview")
+    </script>
+</body>
+
+</html>
